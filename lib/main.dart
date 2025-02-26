@@ -12,12 +12,33 @@ class advance_ui extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
+          drawer: Drawer(
+            child: ListView(
+              children:[
+                ListTile(
+                  leading: Icon(Iconsax.clock_outline),
+                  title: Text("Recent"),
+                  onTap:(){},
+                ),
+                ListTile(
+                  leading: Icon(Iconsax.image_outline),
+                  title: Text("Images"),
+                  onTap:(){},
+                ),
+                ListTile(
+                  leading: Icon(Iconsax.circle_outline),
+                  title: Text("Videos"),
+                  onTap:(){},
+                ),
+              ]
+            ),
+          )
+      /*appBar: AppBar(
         title: Text("Advance UI-UX"),
         centerTitle: true,
         backgroundColor: Color.fromARGB(124, 212, 432, 123),
-      ),
-      body: SingleChildScrollView(
+      ),*/
+      /*body: SingleChildScrollView(
         child: Column(
           children: [
             Image.network("https://i.quotev.com/klqyz2bgaaaa.jpg"),
@@ -30,7 +51,7 @@ class advance_ui extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      ),*/
     ));
   }
 }
