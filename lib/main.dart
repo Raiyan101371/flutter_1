@@ -6,8 +6,8 @@ void main() {
 /*
 tinyurl.com/cse414-nike-res
 */
-class Lab05 extends StatelessWidget {
-  const Lab05({super.key});
+class Lab06 extends StatelessWidget {
+  const Lab06({super.key});
 
   @override
   Widget build(BuildContext context) {
