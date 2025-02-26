@@ -16,22 +16,11 @@ class AdvanceUI extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
-              Sizedbox(
-                height:80,
-                child: DrawerHeader(
-                  child: Row(
-                    mainAxisAlignment:MainAxisAlignment.spaceBetween ,
-                    children: [
-                      Icon(Icons.logo_dev_outlined),
-                      TextButton.icon(
-                        onPressed: (){},
-                        label: Text("Close"),
-                        )
-                    ],
-                  ),  
-                ),
+              ListTile(
+                leading: Icon(Iconsax.clock_outline),
+                title: Text("Recent"),
+                onTap: () {},
               ),
-
               ListTile(
                 leading: Icon(Iconsax.image_outline),
                 title: Text("Images"),
@@ -64,8 +53,25 @@ class AdvanceUI extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Iconsax.home_1_bold),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Iconsax.image_1_bold),
+              label: "Images",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Iconsax.video_1_bold),
+              label: "Videos",
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
 
